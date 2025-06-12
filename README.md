@@ -24,6 +24,7 @@
 
 ```bash
 pip install selenium pandas openpyxl webdriver-manager
+```
 
 📑 Excel 輸入格式說明
 可參考demo_excel.xlsx 的檔案，資料表需包含以下欄位（從左至右）：
