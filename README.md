@@ -29,24 +29,28 @@ pip install selenium pandas openpyxl webdriver-manager
 📑 Excel 輸入格式說明
 可參考demo_excel.xlsx 的檔案，資料表需包含以下欄位（從左至右）：
 
+```bash
 index	 交通方式	  起點地址	    終點地址
  1	  汽車	    台中市XX路	   台中市YY街
  2	  機車	    台中市XX路	   台中市YY街
+```
 
 🚀 執行方式
 確認路徑設定：
 請打開 google爬蟲demo.py，並修改此行為你的 Excel 檔案實際路徑：
 
+```bash
 file_path = r"C:存放demo_excel的資料夾\\demo_excel.xlsx"
 執行程式：python google爬蟲demo.py
-
+```
 產出自動命名的通勤截圖於「公里數截圖」資料夾
 匯出查詢結果為 公里數資料_result.csv
 
 🖼 截圖命名規則
+```bash
 {index}_{交通方式}_{地址}.png
 例如：A001_汽車_台中市南屯區OO路.png
-
+```
 
 🔐 注意事項
 須安裝 Chrome 瀏覽器，且建議使用最新版以確保與 ChromeDriver 相容
